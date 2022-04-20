@@ -5,7 +5,7 @@
  the first command was `sudo apt update` which was succesful
  installed apache with the code `sudo apt install apache2` which was succesful.
  
- ![screenshot](./images/capture.PNG)
+ ![screeshot](./images/capture.PNG)
 
 We have now launched our web server, now we are going to use the code `curl http://localhost:80` to access it locally in our ubuntu shell this is succesful.
 Testing apache now on browser local ip  3.223.195.252
