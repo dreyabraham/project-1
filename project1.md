@@ -5,20 +5,20 @@
  the first command was `sudo apt update` which was succesful
  installed apache with the code `sudo apt install apache2` which was succesful.
  
- ![screeshot](./images/capture.PNG)
+ ![image](./Images.2/capture.PNG)
 
 We have now launched our web server, now we are going to use the code `curl http://localhost:80` to access it locally in our ubuntu shell this is succesful.
 Testing apache now on browser local ip  3.223.195.252
 
-![screenshot](./images/Ubuntu.PNG)
+![screeshot](./Images.2/Ubuntu.PNG)
 
 Next step is installing mysql using the code `sudo apt install mysql-server` succesful.
 using the `sudo mysql_secure_installation` we are going to secure our database.
-![screenshot](./images/mysql.PNG)
+![screenshot](./Images.2/mysql.PNG)
 using the `sudo mysql_secure_installation` we are gonna secure our database.
 log in to mysql to be sure its working with the code `sudo mysql`
 
-![screenshot](./images/mysql2.PNG)
+![screenshot](./Images.2/mysql2.PNG)
 
 Next we are gonna be installing php the final step ,we are going to be using the code `sudo apt install php libapache2-mod-php php-mysql` which is going to install three packages at once. To check if our installation is complete use code `php -v` to confirm the php version
 
@@ -29,7 +29,7 @@ assign ownership to the current user ` sudo chown -R $USER:$USER /var/www/projec
 
 create and open a new configuration file in Apache sites available using vi with the command `sudo vi /etc/apache2/sites-available/projectlamp.conf` save the file after making changes 
 
-![screenshot](./images/php.PNG)
+![screenshot](./Images.2/php.PNG)
 
 The above image shows how to enable the new virtual host using the a2ensite command now we reload Apache so the changes can take effect using the `sudo systemctl reload apache2`
 
@@ -38,7 +38,8 @@ The website is now active, but the web root /var/www/projectlamp is still empty.
 
 Now we go to the website and check for our updates
 succesful!!!
-![screenshot](./images/apache.PNG)
+
+![screenshot](./Images.2/apache.PNG)
 succesful!!!
 
 Next and final step is to enable php on our website, we need to edit the /etc/apache2/mods-enabled/dir.conf file we are gonna be using the command `sudo vim /etc/apache2/mods-enabled/dir.conf` after inputing the changes we are going to save and close the file. 
@@ -50,7 +51,8 @@ phpinfo();` which is valid php file, save the file and close the page
 
 Refresh the webpage 
 Success!!! PhP installation is working as expected
-![screenshot](./images/final.PNG)
+
+![screenshot](./Images.2/final.PNG)
 Success!!! PhP installation is working as expected
 
 
